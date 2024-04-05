@@ -43,7 +43,24 @@
 
     --testo-dark: #4D4D4D;
 
+    --prova-dark: #ffffff;
+    --prova-border-dark:green;
+    
 }
+
+.dark{
+    --prova-dark: #141414;
+    --prova-border-dark:#333333;
+}
+
+.my-btn-test{
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid var(--prova-border-dark);
+    background-color: var(--prova-dark);
+}
+
 
 .btn-dark-secondary,
 .btn-light-secondary {
