@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.urbanist {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.design-nav {
+    background-image: url(/img/design-navbar.png);
+    background-size: cover;
+}
+
+.prova-absolute {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    z-index: 20;
+}
+
+/* COLORS */
+:root {
+    --primary-dark: #7A58D1;
+    --primary-light: #FFCBCB;
+
+    --secondary-dark: #191919;
+    --secondary-light: #DFEBEB ;
+
+    --hover-btn-dark: #1A1A1A;
+    --hover-btn-light: #9EA1D4;
+
+    --bg-dark: #141414;
+    --bg-light: #ffffff;
+
+    --border-dark: #333333;
+    --border-light: #000000;
+
+    --testo-dark: #4D4D4D;
+
+}
+
+.btn-dark-secondary,
+.btn-light-secondary {
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid var(--border-dark);
+    background-color: var(--bg-dark);
+}
+
+.btn-dark-secondary:hover {
+    background-color: var(--hover-btn-dark);
+}
+
+.btn-light-secondary {
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-light);
+}
+
+
+
+
+
+
+
+
+
+.btn-light {
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: var(--bg-light)
+}
