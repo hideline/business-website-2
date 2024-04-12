@@ -1,0 +1,713 @@
+<html class="dark" lang="en" id="test">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Services</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class=" bg-scuro text-black  dark:text-white debug-screens urbanist">
+
+    <!-- PRE-->
+    <div
+        class="w-full grid grid-cols-2 md:grid-cols-3 design-nav h-[50px]  bg-scuro items-center place-content-center ">
+        <div class=" col-start-1  md:col-start-2 ">
+            <div class=" text-center whitespace-nowrap text-[13px] md:text-lg pl-3 md:pl-0 font-semi-bold  ">
+                <div class=" md:flex justify-center gap-0 md:gap-2">
+                    <img class="hidden md:block w-8 h-8 " src="/img/stars.png " alt="404 not found">
+                    Discover Your Dream Property with Estatein
+                    <img class=" hidden md:block  w-8 h-8 " src="/img/stars.png " alt="404 not found">
+                </div>
+            </div>
+        </div>
+        <div class=" cols-start-2 md:col-start-3">
+            <div class=" text-end place-content-end items-end">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-10 h-10 mr-[5px] md:mr-[30px] ml-auto dark:text-[#999999] hover:text-[#703BF7] hover:cursor-pointer ">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <div class="w-full border-t border-b border-[#333333] dark:bg-[#191919]  ">
+        <div class="w-[90%] m-auto py-4">
+            <di class="flex justify-between gap-5 w-full text-lg items-center">
+                <div onclick="darkMode()" class="flex gap-2 items-center cursor-pointer">
+                    <div class="scale-75">
+                        <img src="/img/logo.png" alt="404">
+                    </div>
+                    <div class="text-2xl font-semibold">
+                        Estatein
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="flex items-center gap-10 ">
+                        <a href="index.html">
+                            <button>
+                                Home
+                            </button>
+                        </a>
+                        <a href="/src/about-us.html">
+                            <button class="p-3 rounded-xl cursor-pointer">
+                                About us
+                            </button>
+                        </a>
+                        <a href="/src/properties.html">
+                            <button class="p-3 rounded-xl cursor-pointer">
+                                Properties
+                            </button>
+                        </a>
+
+                        <button class="btn border border-bordo  bg-default hover:bg-hover_default ">
+                            Services
+                        </button>
+
+                    </div>
+                </div>
+                <div class="hidden lg:block ">
+                    <div class="">
+                        <a href="/src/contact-us.html">
+                            <button class="btn border border-bordo  bg-default hover:bg-hover_default ">
+                                Contact Us
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="block lg:hidden">
+                    <!-- <img class="scale-[2]" src="/img/burger.png" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="w-full bg-gradient-to-r from-default   to-black h-[400px] ">
+        <div class="w-[90%] m-auto ">
+
+            <div class="text-5xl pt-10 sm:pt-32">
+                Elevate Your Real Estate Experience
+            </div>
+            <div class="text-gray-500  w-full sm:w-2/3 mt-8">
+                Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive
+                range of services, each designed to cater to your unique needs and dreams.
+            </div>
+        </div>
+    </div>
+    <!-- GRIGLIA SOTTO IL BANNER -->
+    <div class="w-full border-[10px] dark:border-[#191919] my-5 bg-default ">
+        <div class="w-[90%] grid sm:grid-cols-4 lg:grid-cols-8 gap-5 bordo  bg-scuro m-auto">
+            <div class="col-span-2  bg-default  rounded-2xl p-3 ">
+                <div class="flex justify-end ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <div class="">
+                    <div>
+                        <img class="m-auto" src="/img/first-icon.png" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        Find Your Dream Home
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-span-2  bg-default  rounded-2xl p-3 ">
+                <div class="flex justify-end ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <div class="">
+                    <div>
+                        <img class="m-auto" src="/img/second-icon.png" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        Unlock Property Value
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2  bg-default  rounded-2xl p-3 ">
+                <div class="flex justify-end ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <div class="">
+                    <div>
+                        <img class="m-auto" src="/img/third-icon.png" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        Effortless Property Managment
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2  bg-default  rounded-2xl p-3 ">
+                <div class="flex justify-end ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <div class="">
+                    <div>
+                        <img class="m-auto" src="/img/fourth-icon.png" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        Smart Investments, Informed Decisions
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- UNLOCK PROPERTY VALUE -->
+    <div class="w-full bg-scuro">
+        <div class="w-[90%] m-auto">
+            <div class="">
+                <img class="w-10 h-10 " src="/img/stars.png" alt="">
+            </div>
+            <h2 class="text-3xl font-bold pt-5">
+                Unlock Property Value
+            </h2>
+            <div>
+                <div class="dark:text-gray-500 w-full md:w-2/3 mt-5">
+                    Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our
+                    Property Selling Service is designed to maximize the value of your property, ensuring you get the
+                    best deal possible. Explore the categories below to see how we can help you at every step of your
+                    selling journey
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GRIGLIA PROPERTY VALUE -->
+    <div class="w-full bg-scuro mb-32 mt-10">
+        <div class="w-[90%] m-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 ">
+            <!-- 1° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/first-icon-service.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Valuation Mastery
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Discover the true worth of your property with our expert valuation services.
+                </div>
+            </div>
+            <!-- 2° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/icon-container-2.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Strategic Marketing
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Selling a property requires more than just a listing; it demands a strategic marketing.
+                </div>
+            </div>
+            <!-- 3° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/icon-container-money.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Negotiation Wizardry
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Negotiating the best deal is an art, and our negotiation experts are masters of it.
+                </div>
+            </div>
+            <!-- 4° -->
+            <div class="border border-bordo p-10 rounded-xl ">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/icon-container-megafono.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Closing Success
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    A successful sale is not complete until the closing. We guide you through the intricate closing
+                    process. </div>
+            </div>
+            <!-- 5° -->
+            <div class="border border-bordo p-10 rounded-xl sm:col-span-2 design-service ">
+                <div class="flex  gap-5  justify-between flex-wrap xl:flex-nowrap">
+                    <div>
+                        <div class="text-4xl">
+                            Unlock the Value of Your Property Today
+                        </div>
+                        <div class="text-gray-500 mt-5">
+                            Ready to unlock the true value of your property? Explore our Property Selling Service
+                            categories and let us help you achieve the best deal possible for your valuable asset.
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-[200px] xl:pb-32">
+                        <button
+                            class="btn hover:bg-hover_default bg-default border border-bordo w-full md:h-14 md:w-40 ">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- EFFORTLESS PROPERTY MANAGEMENT -->
+    <div class="w-full bg-scuro">
+        <div class="w-[90%] m-auto">
+            <div class="">
+                <img class="w-10 h-10 " src="/img/stars.png" alt="">
+            </div>
+            <h2 class="text-3xl font-bold pt-5">
+                Effortless Property Management
+            </h2>
+            <div>
+                <div class="dark:text-gray-500 w-full md:w-2/3 mt-5">
+                    Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes
+                    the stress out of property ownership, offering comprehensive solutions tailored to your needs.
+                    Explore the categories below to see how we can make property management effortless for you
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GRIGLIA PROPERTY EFFORTLESS MANAGMENT  -->
+    <div class="w-full bg-scuro mb-32 mt-10">
+        <div class="w-[90%] m-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 ">
+            <!-- 1° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/tenant-harmony.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Tenant Harmony
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.
+                </div>
+            </div>
+            <!-- 2° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/maintance-ease.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Maintenance Ease
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.
+                </div>
+            </div>
+            <!-- 3° -->
+            <div class="border border-bordo p-10 rounded-xl">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/financial-peace.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Valuation Mastery
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Discover the true worth of your property with our expert valuation services.
+                </div>
+            </div>
+            <!-- 4° -->
+            <div class="border border-bordo p-10 rounded-xl ">
+                <div class="flex gap-5 items-center">
+                    <div>
+                        <img src="/img/legal-guardian.png" alt="">
+                    </div>
+                    <div class="text-2xl">
+                        Valuation Mastery
+                    </div>
+                </div>
+                <div class="text-gray-500 mt-5">
+                    Discover the true worth of your property with our expert valuation services.
+                </div>
+            </div>
+            <!-- 5° -->
+            <div class="border border-bordo p-10 rounded-xl sm:col-span-2 design-service ">
+                <div class="flex  gap-5  justify-between flex-wrap xl:flex-nowrap ">
+                    <div>
+                        <div class="text-4xl ">
+                            Experience Effortless Property Management
+                        </div>
+                        <div class="text-gray-500 mt-5">
+                            Ready to experience hassle-free property management? Explore our Property Management Service
+                            categories and let us handle the complexities while you enjoy the benefits of property
+                            ownership.
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-[200px] xl:pb-32">
+                        <button
+                            class="btn hover:bg-hover_default bg-default border border-bordo w-full md:h-14 md:w-40 ">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <!-- INVESTMENTS -->
+    <div class="w-full bg-scuro mb-32 ">
+        <div class="w-[90%] m-auto">
+
+
+            <div class=" grid 2xl:grid-cols-3 2xl:grid-row-2 gap-10 ">
+                <!-- 1 -->
+                <div>
+                    <div>
+                        <img class="w-10 h-10 " src="/img/stars.png" alt="">
+                    </div>
+
+                    <h2 class="text-4xl font-bold pt-5">
+                        Smart Investments, Informed Decisions
+                    </h2>
+                    <div>
+                        <div class="dark:text-gray-500 w-full  mt-5">
+                            Building a real estate portfolio requires a strategic approach. Estatein's
+                            Investment
+                            Advisory
+                            Service empowers you to make smart investments and informed decisions.
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="border border-bordo design-service-grid rounded-xl p-4   2xl:row-start-2">
+                    <div class="text-3xl ">
+                        Unlock Your Investment Potential
+                    </div>
+                    <div class="mt-5 text-gray-500">
+                        Explore our Property Management Service categories and let us handle the complexities
+                        while
+                        you enjoy the benefits of property ownership.
+                    </div>
+                    <div class="">
+                        <button class="btn bg-default hover:bg-hover_default border border-bordo w-full  mt-5 ">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+                <!-- 3 -->
+                <div class="sm:col-span-2 sm:row-span-2 bg-default p-4 rounded-xl">
+                    <!-- 1 -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 col-span-1 sm:col-span-2 gap-5">
+                        <div class="border border-bordo p-10 rounded-xl bg-scuro">
+                            <div class="flex gap-5 items-center">
+                                <div>
+                                    <img src="/img/1-icon-container.png" alt="">
+                                </div>
+                                <div class="text-2xl">
+                                    Valuation Mastery
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-5">
+                                Discover the true worth of your property with our expert valuation services.
+                            </div>
+                        </div>
+                        <!-- 2 -->
+
+                        <div class="border border-bordo p-10 rounded-xl bg-scuro">
+                            <div class="flex gap-5 items-center">
+                                <div>
+                                    <img src="/img/1-icon-container.png" alt="">
+                                </div>
+                                <div class="text-2xl">
+                                    Valuation Mastery
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-5">
+                                Discover the true worth of your property with our expert valuation services.
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class=" bg-scuro border border-bordo p-10 rounded-xl">
+                            <div class="flex gap-5 items-center">
+                                <div>
+                                    <img src="/img/1-icon-container.png" alt="">
+                                </div>
+                                <div class="text-2xl">
+                                    Valuation Mastery
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-5">
+                                Discover the true worth of your property with our expert valuation services.
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class=" bg-scuro border border-bordo p-10 rounded-xl">
+                            <div class="flex gap-5 items-center">
+                                <div>
+                                    <img src="/img/1-icon-container.png" alt="">
+                                </div>
+                                <div class="text-2xl">
+                                    Valuation Mastery
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-5">
+                                Discover the true worth of your property with our expert valuation services.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LAST -->
+    <div class="w-full my-20 border border-bordo  relative">
+        <div class="w-[90%] m-auto  my-14">
+            <div class=" z-[1] absolute right-0 bottom-0 ">
+                <img src="/img/abstract-dx.png" alt="">
+            </div>
+            <div class="z-[1] absolute left-0 top-0 rotate-180  ">
+                <img src="/img/abstract-dx.png" alt="">
+            </div>
+            <div class="flex justify-between items-center flex-wrap lg:flex-nowrap sticky z-20 ">
+                <div>
+
+                    <h3 class="text-4xl">
+                        Start Your Real Estate Journey Today
+                    </h3>
+                    <div class="font-normal text-gray-500 pt-5  w-full lg:w-4/5 text-xl">
+                        Your dream property is just a click away. Whether you're looking for a new home, a strategic
+                        investment, or expert real estate advice, Estatein is here to assist you every step of the way.
+                        Take
+                        the first step towards your real estate goals and explore our available properties or get in
+                        touch
+                        with our team for personalized assistance.
+                    </div>
+                </div>
+                <div class="pt-10 lg:pt-0 w-full md:w-60">
+                    <button
+                        class="w-full btn bg-primary hover:bg-hover_primary font-normal whitespace-nowrap pt-5 border border-bordo">
+                        Explore Properties
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="w-full bg-scuro py-10">
+        <div class="w-[90%] m-auto grid grid-cols-2  sm:grid-cols-3 2xl:grid-cols-7 gap-10  ">
+            <!-- SEZIONE  -->
+            <div class=" col-span-2 sm:col-span-3  2xl:col-span-2 w-full 2xl:w-2/3 place-content-start">
+                <div class="flex gap-2 items-center cursor-pointer">
+                    <div class="scale-75">
+                        <img src="/img/logo.png" alt="404">
+                    </div>
+                    <div class="text-2xl font-semibold">
+                        Estatein
+                    </div>
+                </div>
+                <div>
+                    <div class=" flex justify-between border border-bordo dark:bg-default p-4 rounded-lg mt-5 ">
+                        <div class="flex gap-2 ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6 text-black dark:text-gray-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                </svg>
+                            </div>
+                            <div class="dark:text-gray-500 text-black">
+                                Enter Your Email
+                            </div>
+                        </div>
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 -rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Home
+                    </div>
+                    <li>
+                        Hero Section
+                    </li>
+                    <li>
+                        Features
+                    </li>
+                    <li>
+                        Properties
+                    </li>
+                    <li>
+                        Testimonials
+                    </li>
+                    <li>
+                        FAQ's
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        About Us
+                    </div>
+                    <li>
+                        Our Story
+                    </li>
+                    <li>
+                        Our Works
+                    </li>
+                    <li>
+                        How It Works
+                    </li>
+                    <li>
+                        Our Teams
+                    </li>
+                    <li>
+                        Our Clients
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer ">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Properties
+                    </div>
+                    <li>
+                        Portfolio
+                    </li>
+                    <li>
+                        Categories
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Services
+                    </div>
+                    <li>
+                        Valuation Mastery
+                    </li>
+                    <li>
+                        Strategic Marketing
+                    </li>
+                    <li>
+                        Negotiation Wizardry
+                    </li>
+                    <li>
+                        Closing Success
+                    </li>
+                    <li>
+                        Property Management
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Contact Us
+                    </div>
+                    <li>
+                        Contact Form
+                    </li>
+                    <li>
+                        Our Offices
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- AFTER FOOTER -->
+    <div class="w-full bg-default  py-10 ">
+        <div class="w-[90%] flex justify-between m-auto items-center flex-wrap ">
+            <div class="flex gap-10 dark:text-gray-500 ">
+                <div>
+                    @2023 Estatein. All rights Reserved.
+                </div>
+                <div>
+                    Tersm & Condition
+                </div>
+            </div>
+            <div class="flex gap-5 lg:gap-5 pt-5 md:pt-0">
+                <img class="cursor-pointer " src="/img/facebook.png" alt="">
+                <img class="cursor-pointer" src="/img/indeed.png" alt="">
+                <img class="cursor-pointer" src="/img/twitter.png" alt="">
+                <img class="cursor-pointer" src="/img/youtube.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

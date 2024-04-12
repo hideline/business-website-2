@@ -1,0 +1,919 @@
+<html class="dark" lang="en" id="test">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class=" bg-scuro text-black  dark:text-white debug-screens urbanist">
+
+    <!-- PRE-->
+    <div
+        class="w-full grid grid-cols-2 md:grid-cols-3 design-nav h-[50px]  bg-scuro items-center place-content-center ">
+        <div class=" col-start-1  md:col-start-2 ">
+            <div class=" text-center whitespace-nowrap text-[13px] md:text-lg pl-3 md:pl-0 font-semi-bold  ">
+                <div class=" md:flex justify-center gap-0 md:gap-2">
+                    <img class="hidden md:block w-8 h-8 " src="/img/stars.png " alt="404 not found">
+                    Discover Your Dream Property with Estatein
+                    <img class=" hidden md:block  w-8 h-8 " src="/img/stars.png " alt="404 not found">
+                </div>
+            </div>
+        </div>
+        <div class=" cols-start-2 md:col-start-3">
+            <div class=" text-end place-content-end items-end">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-10 h-10 mr-[5px] md:mr-[30px] ml-auto dark:text-[#999999] hover:text-[#703BF7] hover:cursor-pointer ">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <div class="w-full border-t border-b border-[#333333] dark:bg-[#191919]  ">
+        <div class="w-[90%] m-auto py-4">
+            <di class="flex justify-between gap-5 w-full text-lg items-center">
+                <div onclick="darkMode()" class="flex gap-2 items-center cursor-pointer">
+                    <div class="scale-75">
+                        <img src="/img/logo.png" alt="404">
+                    </div>
+                    <div class="text-2xl font-semibold">
+                        Estatein
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="flex items-center gap-10 ">
+                        <a href="index.html">
+                            <button class="">
+                                Home
+                            </button>
+                        </a>
+                        <a href="/src/about-us.html">
+                            <button class="p-3 rounded-xl cursor-pointer ">
+                                About us
+                            </button>
+                        </a>
+                        <a href="/src/properties.html">
+                            <button
+                                class="p-3 rounded-xl cursor-pointer btn border border-bordo hover:bg-hover_default">
+                                Properties
+                            </button>
+                        </a>
+                        <a href="/src/services.html">
+                            <button class="p-3 rounded-xl cursor-pointer">
+                                Services
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block ">
+                    <div class="">
+                        <a href="/src/contact-us.html">
+                            <button class="btn border border-bordo  bg-default hover:bg-hover_default ">
+                                Contact Us
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="block lg:hidden">
+                    <!-- <img class="scale-[2]" src="/img/burger.png" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+
+    <div class="w-full bg-gradient-to-r from-default   to-black h-[400px] ">
+        <div class="w-[90%] m-auto ">
+            <!-- SCRITTE NEL BANNER -->
+            <div class="text-5xl pt-10 sm:pt-32">
+                Find Your Dream Property
+            </div>
+            <div class="text-gray-500  w-full sm:w-2/3 mt-8">
+                Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore
+                our curated selection of properties, each offering a unique story and a chance to redefine your life.
+                With categories to suit every dreamer, your journey
+            </div>
+        </div>
+
+        <!-- SEARCH CENTRATO -->
+        <div
+            class="bg-default w-[90%] sm:w-[70%]  m-auto  border-bordo border rounded-t-xl flex justify-between p-4 items-center mt-10 sm:mt-10 md:mt-16 lg:mt-20 xl:mt-30 shadow_about">
+            <div class="text-lg text-gray-500">
+                Search For A Property
+            </div>
+
+            <div class="flex gap-2 flex-nowrap p-3 bg-primary rounded-xl ">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class="hidden sm:block ">
+                    Find Property
+                </div>
+            </div>
+        </div>
+        <!-- LISTA  -->
+        <div
+            class="w-[90%] m-auto bg-default grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-5   gap-2 mt-3 shadow_about rounded-xl">
+            <!-- 1° - LOCATION -->
+            <div class="border border-bordo bg-scuro  col-span-1 rounded-xl p-3">
+                <div class="flex justify-between gap-5 flex-nowrap">
+                    <div class="flex whitespace-nowrap">
+                        <div class="border-r border-bordo pr-4 text-gray-500  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </div>
+                        <div class="pl-4 text-gray-500">
+                            Location
+                        </div>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 2° -->
+            <div class="border border-bordo  bg-scuro  col-span-1 rounded-xl p-3">
+                <div class="flex justify-between gap-5 flex-nowrap">
+                    <div class="flex whitespace-nowrap text-gray-500">
+                        <div class="border-r border-bordo pr-4 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                            </svg>
+
+
+                        </div>
+                        <div class="pl-4  ">
+                            Property Type
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 3° -->
+            <div class="border border-bordo  bg-scuro  col-span-1 rounded-xl p-3">
+                <div class="flex justify-between gap-5 flex-nowrap">
+                    <div class="flex whitespace-nowrap">
+                        <div class="border-r border-bordo pr-4 text-gray-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+
+
+                        </div>
+                        <div class="pl-4 text-gray-500 ">
+                            Pricing Range
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 4° -->
+            <div class="border border-bordo bg-scuro  col-span-1 rounded-xl p-3">
+                <div class="flex justify-between gap-5 flex-nowrap">
+                    <div class="flex whitespace-nowrap">
+                        <div class="border-r border-bordo pr-4  text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </div>
+                        <div class="pl-4 text-gray-500 ">
+                            Property Size
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 5° -->
+            <div class="border border-bordo  bg-scuro  col-span-1 rounded-xl p-3">
+                <div class="flex justify-between gap-5 flex-nowrap">
+                    <div class="flex whitespace-nowrap">
+                        <div class="border-r border-bordo pr-4  text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </div>
+                        <div class="pl-4 text-gray-500 ">
+                            Build Year
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WORLD OF POSSIBILITIES -->
+    <div class="w-full bg-scuro mt-[430px] sm:mt-[250px] 2xl:mt-32">
+        <div class="w-[90%] m-auto">
+            <div class="">
+                <img class="w-10 h-10 " src="/img/stars.png" alt="">
+            </div>
+            <h2 class="text-3xl font-bold pt-5">
+                Discover a World of Possibilities
+            </h2>
+            <div class="">
+                <div class="dark:text-gray-500 w-full  mt-5">
+                    Our portfolio of properties is as diverse as your dreams. Explore the following categories to find
+                    the perfect property that resonates with your vision of home.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PROPRIETà -->
+    <div class="w-full bg-scuro ">
+        <div class="w-[90%] m-auto ">
+            <div class=" ">
+                <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-14">
+                    <!-- PRIMA -->
+                    <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                        <img class=" w-full" src="/img/prima-img.png" alt="404">
+
+                        <div class="border border-bordo bg-default rounded-xl p-2 text-center mt-10 ">
+                            Coastal Escapes - Where Waves Beckon
+                        </div>
+
+                        <div class="text-xl mt-5">
+                            Seaside Serenity Villa
+                        </div>
+                        <div class="text-gray-500">
+                            A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood..
+                            <u class="text-white">
+                                Read More
+                            </u>
+                        </div>
+
+
+                        <div class="flex justify-between mt-5 gap-2 flex-wrap">
+                            <div class="">
+                                <div class="text-gray-500">
+                                    Price
+                                </div>
+                                <div>
+                                    $ 1,250,000
+                                </div>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap">
+                                    View Property Details
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- SECONDA -->
+                    <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                        <img class=" w-full" src="/img/middle-img.png" alt="404">
+
+
+                        <div class="border border-bordo bg-default rounded-xl p-2 text-center mt-10 ">
+                            Urban Oasis - Life in the Heart of the City
+                        </div>
+
+                        <div class="text-xl mt-5">
+                            Metropolitan Haven
+                        </div>
+                        <div class="text-gray-500">
+                            A chic and fully-furnished 2-bedroom apartment with panoramic city views..
+                            <u class="text-white">
+                                Read More
+                            </u>
+                        </div>
+
+
+                        <div class="flex justify-between mt-5 gap-2 flex-wrap">
+
+                            <div class="">
+                                <div class="text-gray-500">
+                                    Price
+                                </div>
+                                <div>
+                                    $ 650,000
+                                </div>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap">
+                                    View Property Details
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- TERZA -->
+                    <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                        <img class=" w-full" src="/img/lastimg.png" alt="404">
+
+                        <div class="border border-bordo bg-default rounded-xl p-2 text-center mt-10 ">
+                            Countryside Charm - Escape to Nature's Embrace
+                        </div>
+
+                        <div class="text-xl mt-5">
+                            Rustic Retreat Cottage
+                        </div>
+                        <div class="text-gray-500">
+                            An elegant 3-bedrrom, 3-bathroom townhouse in a gated community..
+                            <u class="text-white">
+                                Read More
+                            </u>
+                        </div>
+
+
+
+                        <div class="flex justify-between mt-5 gap-2 flex-wrap">
+
+                            <div class="">
+                                <div class="text-gray-500">
+                                    Price
+                                </div>
+                                <div>
+                                    $ 350,000
+                                </div>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap ">
+                                    View Property Details
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- METTI LE PAGINE -->
+    <div class="w-full mt-10">
+        <div class="w-[90%] m-auto border-t border-bordo pt-5">
+            <div class="flex justify-between items-center">
+                <div>
+                    01 of 10
+                </div>
+                <div>
+                    <div class="flex gap-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-10 h-10 text-bordo">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10 text-gray-300">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAKE IT HAPPEN -->
+    <div class="w-full bg-scuro mt-5">
+        <div class="w-[90%] m-auto">
+            <div class="">
+                <img class="w-10 h-10 " src="/img/stars.png" alt="">
+            </div>
+            <h2 class="text-3xl font-bold pt-5">
+                Let's Make it Happen
+            </h2>
+            <div class="">
+                <div class="dark:text-gray-500 w-full  mt-5">
+                    Ready to take the first step toward your dream property? Fill out the form below, and our real
+                    estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this
+                    exciting journey together.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+    <div class="w-full bg-scuro my-20  ">
+        <div
+            class="w-[90%] m-auto grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-14 border border-bordo p-5 md:p-10 rounded-lg py-10">
+            <!-- NAME -->
+            <div class="text-gray-500 cols-span-1">
+                <div class="text-white pl-2">
+                    First Name
+                </div>
+                <input class="  w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="text"
+                    placeholder="Enter First Name">
+
+            </div>
+            <!-- LAST NAME -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Last name
+                </div>
+                <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="text"
+                    placeholder="Enter Last Name">
+
+            </div>
+            <!-- EMAIL -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Email
+                </div>
+                <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="email"
+                    placeholder="Enter your Email">
+
+            </div>
+            <!-- PHONE -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Phone
+                </div>
+                <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo " type="number"
+                    placeholder="Enter Phone Number">
+
+            </div>
+            <!-- PREF LOCATION -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Preferred Location
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between">
+                        <div>
+                            Select Location
+                        </div>
+                        <div class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- PROP TYPE -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Property Type
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between">
+                        <div>
+                            Select Property Type
+                        </div>
+                        <div class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- BATHROOM NUMBER -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    No. of Bathrooms
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between">
+                        <div>
+                            Select no. of Bathrooms
+                        </div>
+                        <div class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- BED NUMBERS -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    No. of Bedrooms
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between">
+                        <div>
+                            Select No. of Bedrooms
+                        </div>
+                        <div class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- BUDGET X2  -->
+            <div class="text-gray-500 sm:col-span-2">
+                <div class="text-white pl-2">
+                    Budget
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between">
+                        <div>
+                            Select Budget
+                        </div>
+                        <div class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- CONTACT METHOD -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Preferred Contact Method
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            <div>
+                                Enter your Number
+                            </div>
+                        </div>
+                        <div class="bg-primary h-5 w-5 rounded-full">
+
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- EMAIL -->
+            <div class="text-gray-500">
+                <div class="text-white pl-2">
+                    Email
+                </div>
+                <button class="w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo text-left">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                            </svg>
+
+
+                            <div>
+                                Enter your Email
+                            </div>
+                        </div>
+                        <div class="bg-default border border-primary h-5 w-5 rounded-full">
+
+                        </div>
+                    </div>
+                </button>
+                <!-- <input class=" w-full p-4 mt-2 bg-scuro border rounded-xl border-bordo" type="number" placeholder="Enter Phone Number"> -->
+
+            </div>
+            <!-- TEXT AREA -X4 -->
+            <div class="text-gray-500 sm:col-span-2 2xl:col-span-4 ">
+                <div class="text-white mb-2">
+                    Message
+                </div>
+                <textarea class="bg-default w-full p-4 rounded-md border border-bordo" name="textarea" id="area-text"
+                    cols="auto" rows="auto" placeholder="Enter your message here.."></textarea>
+            </div>
+
+            <!-- TERMS-X4 -->
+            <div class=" col-span-1 sm:col-span-2 2xl:col-span-4">
+                <div class="flex justify-between flex-wrap gap-10">
+                    <div class="flex items-center gap-3">
+                        <div class="">
+                            <input class=" w-5 h-5" type="checkbox">
+                        </div>
+                        <div>
+                            I agree with <u>Terms of Use</u> and <u>Privacy Policy</u>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-60">
+                        <button class="btn bg-primary  w-full ">
+                            Send Your Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- LAST -->
+    <div class="w-full my-40 border border-bordo  relative">
+        <div class="w-[90%] m-auto  my-14">
+            <div class=" z-[1] absolute right-0 bottom-0 ">
+                <img src="/img/abstract-dx.png" alt="">
+            </div>
+            <div class="z-[1] absolute left-0 top-0 rotate-180  ">
+                <img src="/img/abstract-dx.png" alt="">
+            </div>
+            <div class="flex justify-between items-center flex-wrap lg:flex-nowrap sticky z-20 ">
+                <div>
+
+                    <h3 class="text-4xl">
+                        Start Your Real Estate Journey Today
+                    </h3>
+                    <div class="font-normal text-gray-500 pt-5  w-full lg:w-4/5 text-xl">
+                        Your dream property is just a click away. Whether you're looking for a new home, a strategic
+                        investment, or expert real estate advice, Estatein is here to assist you every step of the way.
+                        Take
+                        the first step towards your real estate goals and explore our available properties or get in
+                        touch
+                        with our team for personalized assistance.
+                    </div>
+                </div>
+                <div class="pt-10 lg:pt-0 w-full md:w-60">
+                    <button class=" w-full btn bg-primary hover:bg-hover_primary  whitespace-nowrap pt-5 border border-bordo">
+                        Explore Properties
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- FOOTER  -->
+    <div class="w-full bg-scuro py-10 mt-20">
+
+        <div class="w-[90%] m-auto grid grid-cols-2  sm:grid-cols-3 2xl:grid-cols-7 gap-10  ">
+
+            <div class=" col-span-2 sm:col-span-3  2xl:col-span-2 w-full 2xl:w-2/3 place-content-start">
+                <div class="flex gap-2 items-center cursor-pointer">
+                    <div class="scale-75">
+                        <img src="/img/logo.png" alt="404">
+                    </div>
+                    <div class="text-2xl font-semibold">
+                        Estatein
+                    </div>
+                </div>
+                <div>
+                    <div class=" flex justify-between border border-bordo dark:bg-default p-4 rounded-lg mt-5 ">
+                        <div class="flex gap-2 ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6 text-black dark:text-gray-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                </svg>
+                            </div>
+                            <div class="dark:text-gray-500 text-black">
+                                Enter Your Email
+                            </div>
+                        </div>
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 -rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Home
+                    </div>
+                    <li>
+                        Hero Section
+                    </li>
+                    <li>
+                        Features
+                    </li>
+                    <li>
+                        Properties
+                    </li>
+                    <li>
+                        Testimonials
+                    </li>
+                    <li>
+                        FAQ's
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        About Us
+                    </div>
+                    <li>
+                        Our Story
+                    </li>
+                    <li>
+                        Our Works
+                    </li>
+                    <li>
+                        How It Works
+                    </li>
+                    <li>
+                        Our Teams
+                    </li>
+                    <li>
+                        Our Clients
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer ">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Properties
+                    </div>
+                    <li>
+                        Portfolio
+                    </li>
+                    <li>
+                        Categories
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Services
+                    </div>
+                    <li>
+                        Valuation Mastery
+                    </li>
+                    <li>
+                        Strategic Marketing
+                    </li>
+                    <li>
+                        Negotiation Wizardry
+                    </li>
+                    <li>
+                        Closing Success
+                    </li>
+                    <li>
+                        Property Management
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 leading-10 cursor-pointer">
+                <ul>
+                    <div class="dark:text-gray-500 text-black font-bold">
+                        Contact Us
+                    </div>
+                    <li>
+                        Contact Form
+                    </li>
+                    <li>
+                        Our Offices
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- AFTER FOOTER -->
+    <div class="w-full bg-default  py-10 ">
+        <div class="w-[90%] flex justify-between m-auto items-center flex-wrap ">
+            <div class="flex gap-10 dark:text-gray-500 ">
+                <div>
+                    @2023 Estatein. All rights Reserved.
+                </div>
+                <div>
+                    Tersm & Condition
+                </div>
+            </div>
+            <div class="flex gap-5 lg:gap-5 pt-5 md:pt-0">
+                <img class="cursor-pointer " src="/img/facebook.png" alt="">
+                <img class="cursor-pointer" src="/img/indeed.png" alt="">
+                <img class="cursor-pointer" src="/img/twitter.png" alt="">
+                <img class="cursor-pointer" src="/img/youtube.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

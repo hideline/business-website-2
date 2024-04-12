@@ -3,16 +3,26 @@ export default {
   darkMode: 'selector',
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
     extend: {
-      
+      colors: {
+        primary: 'var(--primary)',
+        default: 'var(--default)',
+        scuro: 'var(--darker)',
+        bordo: 'var(--border)',
+        hover_primary: 'var(--hover-primary)',
+        hover_default: 'var(--hover-default)',
+      }
+
     },
+
   },
   plugins: [
     require('tailwindcss-debug-screens'),
-
-  ],
+  ]
 }
+
+
 

@@ -5,8 +5,9 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Home</title>
+   <title>Estatein</title>
    <link rel="stylesheet" href="/style.css">
+
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +18,17 @@
 
 </head>
 
-<body class="bg-white text-black dark:bg-[#141414] dark:text-white debug-screens urbanist">
+<body class=" bg-scuro text-black  dark:text-white debug-screens urbanist">
 
    <!-- PRE-->
-   <div class="w-full grid grid-cols-2 md:grid-cols-3 design-nav h-[50px] items-center dark:bg-[#141414] bg-violet-400">
-      <div class=" col-start-1  md:col-start-2">
-         <div class=" text-center whitespace-nowrap text-[13px] md:text-lg pl-3 md:pl-0 font-semi-bold">
-            Discover Your Dream Property with Estatein
-            <u class=" hidden cursor-pointer ">
-               Learn More</u>
+   <div class="w-full grid grid-cols-2 md:grid-cols-3 design-nav h-[50px]  bg-scuro items-center place-content-center ">
+      <div class=" col-start-1  md:col-start-2 ">
+         <div class=" text-center whitespace-nowrap text-[13px] md:text-lg pl-3 md:pl-0 font-semi-bold  ">
+            <div class=" md:flex justify-center gap-0 md:gap-2">
+               <img class="hidden md:block w-8 h-8 " src="/img/stars.png " alt="404 not found">
+               Discover Your Dream Property with Estatein
+               <img class=" hidden md:block  w-8 h-8 " src="/img/stars.png " alt="404 not found">
+            </div>
          </div>
       </div>
       <div class=" cols-start-2 md:col-start-3">
@@ -44,7 +47,7 @@
       </div>
    </div>
    <!-- NAVBAR -->
-   <div class="w-full border-t border-b border-[#333333] dark:bg-[#191919] bg-violet-400">
+   <div class="w-full border-t border-b border-[#333333] dark:bg-[#191919]  ">
       <div class="w-[90%] m-auto py-4">
          <di class="flex justify-between gap-5 w-full text-lg items-center">
             <div onclick="darkMode()" class="flex gap-2 items-center cursor-pointer">
@@ -57,27 +60,35 @@
             </div>
             <div class="hidden lg:block">
                <div class="flex items-center gap-10 ">
-                  <!-- btn-dark-secondary btn-dark-secondary:hover  -->
-                  <div class="my-btn-test">
-                     Home
-                  </div>
-                  <div class="p-3 rounded-xl cursor-pointer">
-                     About Us
-                  </div>
-                  <div class="p-3 rounded-xl cursor-pointer">
-                     Properties
-                  </div>
-                  <div class="p-3 rounded-xl cursor-pointer">
-                     Services
-                  </div>
+                  <a href="index.html">
+                     <button class="btn border border-bordo hover:bg-hover_default">
+                        Home
+                     </button>
+                  </a>
+                  <a href="/src/about-us.html">
+                     <button class="p-3 rounded-xl cursor-pointer">
+                        About us
+                     </button>
+                  </a>
+                  <a href="/src/properties.html">
+                     <button class="p-3 rounded-xl cursor-pointer">
+                        Properties
+                     </button>
+                  </a>
+                  <a href="/src/services.html">
+                     <button class="p-3 rounded-xl cursor-pointer">
+                        Services
+                     </button>
+                  </a>
                </div>
             </div>
-            <div class="hidden lg:block">
-               <div>
-                  <button
-                     class="dark:bg-[#141414] dark:hover:bg-[#1A1A1A] bg-violet-400 hover:bg-violet-300 p-3 rounded-xl border border-[#333333]">
-                     Contact Us
-                  </button>
+            <div class="hidden lg:block ">
+               <div class="">
+                  <a href="/src/contact-us.html">
+                     <button class="btn border border-bordo  bg-default hover:bg-hover_default ">
+                        Contact Us
+                     </button>
+                  </a>
                </div>
 
             </div>
@@ -92,12 +103,12 @@
       </div>
    </div>
 
-   <!-- ABSOLUTE -->
+   <!-- ABSOLUTE BANNER CERCHIO -->
    <div class="prova-absolute  hidden xl:block ">
       <img src="/img/circle-banner.png" alt="">
    </div>
    <!-- BANNER -->
-   <div class="w-full dark:bg-[#141414] ">
+   <div class="w-full bg-scuro ">
       <div class="w-[90%] m-auto grid  2lg:grid-cols-1 xl:grid-cols-2 ">
          <div class=" w-[80%]  mx-auto  pt-24 ">
             <h1 class="text-5xl font-semibold">
@@ -107,16 +118,16 @@
                Your journey to finding the perfect property begins here. Explore our listings to find the home that
                matches your dreams.
             </div>
-            <div class="flex gap-5 py-10">
-               <button
-                  class="p-3 rounded-xl border   cursor-pointer dark:bg-[#141414] bg-violet-400 dark:hover:bg-[#1A1A1A] hover:bg-violet-300 border-[#333333]">
+            <div class="flex gap-5 py-10 flex-wrap">
+               <button class="btn border border-bordo hover:bg-hover_default  bg-default w-full md:w-[150px]">
                   Learn More
                </button>
 
-               <button
-                  class="p-3 rounded-xl border cursor-pointer dark:bg-[#703BF7] bg-violet-400 dark:hover:bg-[#7a58d1] hover:bg-violet-300 border-[#333333]">
-                  Browse Properties
-               </button>
+               <a href="/src/properties-details.html">
+                  <button class=" btn border border-bordo  bg-primary hover:bg-hover_primary  w-full md:w-[200px]">
+                     Browse Properties
+                  </button>
+               </a>
 
             </div>
             <div class="grid md:grid-cols-3 gap-5">
@@ -150,7 +161,7 @@
             </div>
          </div>
 
-         <div class="mt-20  mr-0 xl:mt-0  rounded-2xl  dark:bg-[#191919] bg-[#141414] ">
+         <div class="mt-20  mr-0 xl:mt-0  rounded-2xl  bg-default ">
             <img class="w-full rounded-2xl " src="/img/banner-img.png" alt="">
 
          </div>
@@ -160,10 +171,9 @@
    </div>
 
    <!-- GRIGLIA SOTTO IL BANNER -->
-   <div class="w-full border-[10px] dark:border-[#191919] my-5 dark:bg-[#191919] bg-gray-200">
-      <div
-         class="w-[90%] grid sm:grid-cols-4 lg:grid-cols-8 gap-5 border-[10px] dark:border-[#141414] rounded-3xl dark:bg-[#141414] m-auto">
-         <div class="col-span-2  dark:bg-[#191919]  rounded-2xl p-3 bg-white">
+   <div class="w-full border-[10px] dark:border-[#191919] my-5 bg-default ">
+      <div class="w-[90%] grid sm:grid-cols-4 lg:grid-cols-8 gap-5 bordo  bg-scuro m-auto">
+         <div class="col-span-2  bg-default  rounded-2xl p-3 ">
             <div class="flex justify-end ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
@@ -181,7 +191,7 @@
          </div>
 
 
-         <div class="col-span-2  dark:bg-[#191919]  rounded-2xl p-3 bg-white">
+         <div class="col-span-2  bg-default  rounded-2xl p-3 ">
             <div class="flex justify-end ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
@@ -193,11 +203,12 @@
                   <img class="m-auto" src="/img/second-icon.png" alt="">
                </div>
                <div class="text-center pt-3">
-                  Find Your Dream Home
+                  Unlock Property Value
                </div>
             </div>
          </div>
-         <div class="col-span-2  dark:bg-[#191919]  rounded-2xl p-3 bg-white">
+
+         <div class="col-span-2  bg-default  rounded-2xl p-3 ">
             <div class="flex justify-end ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
@@ -209,11 +220,12 @@
                   <img class="m-auto" src="/img/third-icon.png" alt="">
                </div>
                <div class="text-center pt-3">
-                  Find Your Dream Home
+                  Effortless Property Managment
                </div>
             </div>
          </div>
-         <div class="col-span-2  dark:bg-[#191919]  rounded-2xl p-3 bg-white">
+
+         <div class="col-span-2  bg-default  rounded-2xl p-3 ">
             <div class="flex justify-end ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6 text-end place-content-end me-">
@@ -225,11 +237,10 @@
                   <img class="m-auto" src="/img/fourth-icon.png" alt="">
                </div>
                <div class="text-center pt-3">
-                  Find Your Dream Home
+                  Smart Investments, Informed Decisions
                </div>
             </div>
          </div>
-
 
       </div>
 
@@ -237,35 +248,224 @@
 
 
    <!-- FEATURED PROPERTIES -->
-   <div class="w-full dark:bg-[#141414]">
+   <div class="w-full bg-scuro">
       <div class="w-[90%] m-auto">
-         <div>
-            <!-- <img class="" src="/img/spark.png" alt=""> -->
+         <div class="">
+            <img class="w-10 h-10 " src="/img/stars.png" alt="">
          </div>
          <h2 class="text-3xl font-bold pt-5">
             Featured Properties
          </h2>
-         <div class="flex justify-between">
-            <div class="dark:text-gray-500 w-2/3">
+         <div class="flex justify-between gap-5 flex-wrap">
+            <div class="dark:text-gray-500 w-full md:w-2/3 mt-5">
                Explore our handpicked selection of featured properties. Each listening offers a glimpse info exceptional
                homes and investments available through Estatein. Click 'View Details' for more information.
             </div>
             <div>
-               <button
-                  class="dark:bg-[#191919] dark:hover:bg-[#141414] bg-violet-400 hover:bg-violet-300 p-3 rounded-xl border border-[#333333]">
+               <button class="btn border border-bordo hover:bg-hover_default bg-default w-full ">
                   View All Properties
                </button>
             </div>
          </div>
-
       </div>
 
    </div>
    <!-- PROPRIETà -->
-   <div class="w-full primary">
-      <div class="w-[90%] m-auto border grid grid-cols-3">
-         <div class="border-[#333333] ">
-            <div>
+   <div class="w-full bg-scuro ">
+      <div class="w-[90%] m-auto ">
+         <div class=" ">
+            <div class="grid grid-cols-1  lg:grid-cols-3 gap-5 mt-14">
+               <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                  <img class=" w-full" src="img/prima-img.png" alt="404">
+                  <div class="text-xl mt-5">
+                     Seaside Serenity Villa
+                  </div>
+                  <div class="text-gray-500">
+                     A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood..
+                     <u class="text-white">
+                        Read More
+                     </u>
+                  </div>
+
+                  <div class="flex gap-5 pt-5 flex-wrap">
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bed.png" alt="">
+                        </div>
+                        <div>
+                           4-Bedroom
+                        </div>
+                     </div>
+
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bathroom.png" alt="">
+                        </div>
+                        <div>
+                           3-Bathroom
+                        </div>
+                     </div>
+
+
+                     <div class="flex gap-1 sfondo-secondary rounded-md items-center border border-bordo  pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/villa.png" alt="">
+                        </div>
+                        <div>
+                           Villa
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="flex justify-between mt-5 gap-2 flex-wrap">
+
+                     <div class="">
+                        <div class="text-gray-500">
+                           Price
+                        </div>
+                        <div>
+                           $ 550,000
+                        </div>
+                     </div>
+                     <div>
+                        <button
+                           class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap">
+                           View Property Details
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                  <img class=" w-full" src="img/middle-img.png" alt="404">
+                  <div class="text-xl mt-5">
+                     Metropolitan Haven
+                  </div>
+                  <div class="text-gray-500">
+                     A chic and fully-furnished 2-bedroom apartment with panoramic city views..
+                     <u class="text-white">
+                        Read More
+                     </u>
+                  </div>
+
+                  <div class="flex gap-5 pt-5 flex-wrap">
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bed.png" alt="">
+                        </div>
+                        <div>
+                           2-Bedroom
+                        </div>
+                     </div>
+
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bathroom.png" alt="">
+                        </div>
+                        <div>
+                           2-Bathroom
+                        </div>
+                     </div>
+
+
+                     <div class="flex gap-1 sfondo-secondary rounded-md items-center border border-bordo  pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/villa.png" alt="">
+                        </div>
+                        <div>
+                           Villa
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="flex justify-between mt-5 gap-2 flex-wrap">
+
+                     <div class="">
+                        <div class="text-gray-500">
+                           Price
+                        </div>
+                        <div>
+                           $ 550,000
+                        </div>
+                     </div>
+                     <div>
+                        <button
+                           class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap">
+                           View Property Details
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="p-4 sm:p-8 w-full border-2 border-bordo rounded-xl ">
+
+                  <img class=" w-full" src="img/lastimg.png" alt="404">
+                  <div class="text-xl mt-5">
+                     Rustic Retreat Cottage
+                  </div>
+                  <div class="text-gray-500">
+                     An elegant 3-bedrrom, 3-bathroom townhouse in a gated community..
+                     <u class="text-white">
+                        Read More
+                     </u>
+                  </div>
+
+                  <div class="flex gap-5 pt-5 flex-wrap">
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bed.png" alt="">
+                        </div>
+                        <div>
+                           3-Bedroom
+                        </div>
+                     </div>
+
+                     <div class="flex gap-1 bg-dafault rounded-md items-center border border-bordo pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/bathroom.png" alt="">
+                        </div>
+                        <div>
+                           3-Bathroom
+                        </div>
+                     </div>
+
+
+                     <div class="flex gap-1 sfondo-secondary rounded-md items-center border border-bordo  pr-2">
+                        <div class="dark:bg-white  p-1 rounded-md ">
+                           <img class="w-8 h-8  " src="/img/villa.png" alt="">
+                        </div>
+                        <div>
+                           Villa
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="flex justify-between mt-5 gap-2 flex-wrap">
+
+                     <div class="">
+                        <div class="text-gray-500">
+                           Price
+                        </div>
+                        <div>
+                           $ 550,000
+                        </div>
+                     </div>
+                     <div>
+                        <button
+                           class="p-4 px-10 bg-primary hover:bg-hover_primary border border-bordo rounded-md whitespace-nowrap">
+                           View Property Details
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
 
             </div>
 
@@ -275,18 +475,373 @@
       </div>
    </div>
 
+   <!-- PAGINE -->
+   <div class="w-full mt-10">
+      <div class="w-[90%] m-auto border-t border-bordo pt-5">
+         <div class="flex justify-between items-center">
+            <div>
+               01 of 60
+            </div>
+            <div>
+               <div class="flex gap-2 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-10 h-10 text-bordo">
+                     <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <div>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-10 h-10 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                           d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                     </svg>
+
+                  </div>
+               </div>
 
 
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+   <!-- WHAT OUR CLIENTS SAY -->
+   <div class="w-full bg-scuro mt-10">
+      <div class="w-[90%] m-auto">
+         <div class="">
+            <img class="w-10 h-10 " src="/img/stars.png" alt="">
+         </div>
+         <h2 class="text-3xl font-bold pt-5">
+            What Our Clients Say
+         </h2>
+         <div class="flex justify-between gap-5 flex-wrap">
+            <div class="dark:text-gray-500 w-full md:w-2/3 mt-5">
+               Road the success stories and heartfelt testimonials from our valued clients. Discover why they chose
+               Estatein for their real estate needs.
+            </div>
+            <div>
+               <button class="btn border border-bordo hover:bg-hover_default bg-default">
+                  View All Testimonials
+               </button>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- GRIGLIA TESTIMONIALS -->
+   <div class="w-full">
+      <div class="w-[90%] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-14">
+         <!-- PRIMA CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="flex gap-2">
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  Exceptional Service!
+               </h3>
+               <div class="font-normal pt-5">
+                  Our experience with Estatein was outstanding. Their team's dedication and professionallism made
+                  finding our dream home a breeze. Highly recommended!
+               </div>
+            </div>
+
+            <div class="flex mt-5 items-center gap-5">
+               <div>
+                  <img src="img/Profile.png" alt="">
+               </div>
+               <div>
+                  Wade Warren
+                  <div class="text-gray-500">
+                     USA, California
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <!-- SECOND CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="flex gap-2">
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  Efficient and Reliable
+               </h3>
+               <div class="pt-5 font-normal">
+                  Estatein provided us with top-notch service. They helped us sell our property quickly and at a great
+                  price. We couldn't be happier with the results.
+               </div>
+            </div>
+
+            <div class="flex mt-5 gap-5 items-center">
+               <div>
+                  <img src="img/amelie.png" alt="">
+               </div>
+               <div>
+                  Emelie Thomson
+                  <div class="text-gray-500">
+                     USA, Florida
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <!-- THIRD CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="flex gap-2">
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full  place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+               <div class="bg-default h-8 w-8 rounded-full place-content-center">
+                  <div>
+                     <img class="w-5 h-5 m-auto" src="img/star.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  Trusted Advisors
+               </h3>
+               <div class="pt-5 font-normal">
+                  The Estatein team guided us through the entire buying process. Their knowledge and commitment to our
+                  needs were impressive. Thank you for your support!
+               </div>
+            </div>
+
+            <div class="flex mt-5 gap-5 items-center">
+               <div>
+                  <img src="img/third-img.png" alt="">
+               </div>
+               <div>
+                  John Mans
+                  <div class="text-gray-500">
+                     USA, Nevada
+                  </div>
+               </div>
+
+            </div>
+         </div>
 
 
+      </div>
+
+   </div>
+
+   <!-- QUESTIONS -->
+   <div class="w-full bg-scuro mt-10">
+      <div class="w-[90%] m-auto">
+         <div class="">
+            <img class="w-10 h-10 " src="/img/stars.png" alt="">
+         </div>
+         <h2 class="text-3xl font-bold pt-5">
+            Frequently Asked Questions
+         </h2>
+         <div class="flex justify-between gap-5 flex-wrap">
+            <div class="dark:text-gray-500 w-full md:w-2/3 mt-5">
+               Find answers to common questions about Estatein's service, property listing, and the real estate process.
+               We're here to provide clarity and assist you every step of the way.
+            </div>
+            <div>
+               <button class="btn border border-bordo hover:bg-hover_default bg-default">
+                  View All Testimonials
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="w-full">
+      <div class="w-[90%] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-14">
+         <!-- PRIMA CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  How do I search for properties on Estatein?
+               </h3>
+               <div class="mt-10 font-normal">
+                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+               </div>
+               <div class="mt-5">
+                  <button class="btn bg-default hover:bg-hover_default border border-bordo">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div>
+         <!-- SECOND CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  What documents do I need to sell my property through Estatein?
+               </h3>
+               <div class="mt-10 font-normal">
+                  Find out about the necessary documentation for listing your property with us.
+               </div>
+               <div class="mt-5">
+                  <button class="btn bg-default hover:bg-hover_default border border-bordo">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div>
+         <!-- THIRD CARD -->
+         <div class="border border-bordo p-8 rounded-xl">
+            <div class="mt-5">
+               <h3 class="text-xl">
+                  How can I contact an Estatein agent?
+               </h3>
+               <div class="mt-10 font-normal">
+                  Discover the different ways you can get in touch with our experienced agents.
+               </div>
+               <div class="mt-5">
+                  <button class="btn bg-default hover:bg-hover_default border border-bordo">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+   <!-- PAGINE -->
+   <div class="w-full mt-10">
+      <div class="w-[90%] m-auto border-t border-bordo pt-5">
+         <div class="flex justify-between items-center">
+            <div>
+               01 of 10
+            </div>
+            <div>
+               <div class="flex gap-2 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-10 h-10 text-bordo">
+                     <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <div>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-10 h-10 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                           d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                     </svg>
+
+                  </div>
+               </div>
 
 
+            </div>
+         </div>
 
+      </div>
+
+   </div>
+
+   <!-- LAST -->
+   <div class="w-full my-40 border border-bordo  relative">
+      <div class="w-[90%] m-auto  my-14">
+         <div class=" z-[1] absolute right-0 bottom-0 ">
+            <img src="/img/abstract-dx.png" alt="">
+         </div>
+         <div class="z-[1] absolute left-0 top-0 rotate-180  ">
+            <img src="/img/abstract-dx.png" alt="">
+         </div>
+         <div class="flex justify-between items-center flex-wrap lg:flex-nowrap sticky z-20 ">
+            <div>
+
+               <h3 class="text-4xl">
+                  Start Your Real Estate Journey Today
+               </h3>
+               <div class="font-normal text-gray-500 pt-5  w-full lg:w-4/5 text-xl">
+                  Your dream property is just a click away. Whether you're looking for a new home, a strategic
+                  investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take
+                  the first step towards your real estate goals and explore our available properties or get in touch
+                  with our team for personalized assistance.
+               </div>
+            </div>
+            <div class="pt-10 lg:pt-0 w-full md:w-60">
+               <button
+                  class=" w-full btn bg-primary hover:bg-hover_primary font-normal whitespace-nowrap pt-5 border border-bordo">
+                  Explore Properties
+               </button>
+            </div>
+         </div>
+      </div>
+
+   </div>
 
 
 
    <!-- FOOTER  -->
-   <div class="w-full dark:bg-[#141414] bg-violet-400 py-10">
+   <div class="w-full bg-scuro py-10">
       <div class="w-[90%] m-auto grid grid-cols-2  sm:grid-cols-3 2xl:grid-cols-7 gap-10  ">
          <!-- SEZIONE  -->
          <div class=" col-span-2 sm:col-span-3  2xl:col-span-2 w-full 2xl:w-2/3 place-content-start">
@@ -299,8 +854,7 @@
                </div>
             </div>
             <div>
-               <div
-                  class=" flex justify-between border border-[#333333] dark:bg-[#191919] bg-violet-400 p-4 rounded-lg mt-5 ">
+               <div class=" flex justify-between border border-bordo dark:bg-default p-4 rounded-lg mt-5 ">
                   <div class="flex gap-2 ">
                      <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -419,7 +973,7 @@
 
    </div>
    <!-- AFTER FOOTER -->
-   <div class="w-full dark:bg-[#191919] bg-[#9271f4] py-10 ">
+   <div class="w-full bg-default  py-10 ">
       <div class="w-[90%] flex justify-between m-auto items-center flex-wrap ">
          <div class="flex gap-10 dark:text-gray-500 ">
             <div>
@@ -441,8 +995,12 @@
 
    </div>
 
-   <script src="/main.js"></script>
 
+
+
+
+
+   <script src="/main.js"></script>
 </body>
 
 </html>
