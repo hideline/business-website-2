@@ -1,3 +1,5 @@
+import { splitVendorChunk } from 'vite'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'selector',
@@ -14,14 +16,13 @@ export default {
         bordo: 'var(--border)',
         hover_primary: 'var(--hover-primary)',
         hover_default: 'var(--hover-default)',
+        testo: 'var(--testo)',
       }
-
-    },
-
+    }
   },
-  plugins: [
-    require('tailwindcss-debug-screens'),
-  ]
+plugins: [
+  require('tailwindcss-debug-screens'),
+]
 }
 
 
